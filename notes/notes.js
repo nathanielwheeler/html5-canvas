@@ -1,4 +1,4 @@
-// This is _one_ way to make the canvas responsive.  However, it is much more efficient to simply use `vh` and `vw` to style the canvas.
+// This is a pretty good responsive render that doesn't wonk up the shapes
 
 function render() {
 	context.canvas.width = document.documentElement.clientWidth
@@ -10,3 +10,10 @@ function render() {
 render()
 
 window.addEventListener("resize", render)
+
+
+// Unfortunately, using this css really zooms into the canvas and pixelates shapes within.
+// canvas {
+// 	height: 100vh;
+// 	width: 100vw;
+// }

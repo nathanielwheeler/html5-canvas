@@ -3,7 +3,7 @@
 	margin: 0;
 	padding: 0;
 
-	background: rgb(75, 75, 75);
+	background: black;
 	color: lime;
 }
 
@@ -16,11 +16,9 @@ body {
 	min-height: 100%;
 	width: 100%;
 }
-/* Interestingly, this setup (in conjunction with the html/body styling) will _not_ push other elements out of the viewport. */
+
 canvas {
-	height: 100vh;
-	width: 100vw;
-	position: fixed;
+	background: rgb(75, 75, 75);
 }
 
 .page-title {
