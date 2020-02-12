@@ -1,0 +1,28 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+
+	background: rgb(75, 75, 75);
+	color: lime;
+}
+
+/* This is so that the html and body elements will stay within the viewport. */
+html {
+	height: 100%;
+	width: 100%;
+}
+body {
+	min-height: 100%;
+	width: 100%;
+}
+/* Interestingly, this setup (in conjunction with the html/body styling) will _not_ push other elements out of the viewport. */
+canvas {
+	height: 100vh;
+	width: 100vw;
+	position: fixed;
+}
+
+.page-title {
+	text-align: center;
+}
