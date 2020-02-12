@@ -3,7 +3,7 @@
 	margin: 0;
 	padding: 0;
 
-	background: black;
+	background: rgb(63, 63, 63);
 	color: lime;
 }
 
@@ -16,9 +16,11 @@ body {
 	min-height: 100%;
 	width: 100%;
 }
-
+/* This places the canvas 'over' the body element. */
 canvas {
-	background: rgb(75, 75, 75);
+	background: rgba(0, 0, 0, 0);
+	position: fixed;
+	top: 0;
 }
 
 .page-title {
